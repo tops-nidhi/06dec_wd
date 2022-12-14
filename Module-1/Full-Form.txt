@@ -1,0 +1,4 @@
+W3c - World Wide Web Consortium
+APA -  Accessible Platform Architectures
+HTTP - Hypertext Transfer Protocol
+HTTPs - Hypertext Transfer Protocol Secure
