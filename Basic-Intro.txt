@@ -1,0 +1,15 @@
+->HTML:-Hyper Text Markup Language
+->Hyper Text:- Overactive text
+->Markup :- To display
+->its is very easy to right and does't show any type of error when we write something on it without using html tag it does not show any error but misbehave.
+->Why html? :- It provides the structure of a websit
+->!DOCTYPE  :- tells the version of html 5 to the browser
+->lang="en" :- it tells the Language used in html Document
+-><HTML>:-Root element 
+->html is devided into main 2 part :1.Head, 2.Body
+->head tag consist information like meta, title, link, style, base, script.
+->Body's content shown in the web page
+->pair tag mins which tag start and end tag
+	ex: <p></p>
+->self tag min there's only start tag
+	ex: <meta>, <link>, <base>
