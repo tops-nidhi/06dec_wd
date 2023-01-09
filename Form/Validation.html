@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 24px;
+            font-family: cursive;
+            background-color: powderblue;
+        }
+        form{
+            /* background: #666; */
+            border: 10px ridge #03b6a0;
+            border-radius: 20px;
+            /* margin: 20px; */
+            margin: 200px auto;
+            padding: 20px;
+            width: 500px;
+            text-align: center;
+        }
+        input{
+            /* display: block; */
+            font-size: 24px;
+            height: 20px;
+            color: #03b6f2;
+        }
+        #pass{
+            color: darkblue;
+            border: none;
+        }
+        input[type=submit]{
+            height: 35px;
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="post">
+        <label for="nm">Name:</label>
+        <input type="text" name="nm" id="" pattern="[a-z,A-Z]+" placeholder="Enter your name..." required><br><br>
+        <label for="mail">Email:</label>
+        <input type="mail" name="mail" id="" required><br><br>
+        Password: <input type="password" name="pass" id="pass" pattern="[a-z,A-Z,0-9,@,_]{6,8}" required>
+        <input type="submit" name="sub" id="" value="Log-in">
+    </form>
+</body>
+</html>
