@@ -1,0 +1,11 @@
+CSS- Casceding Style Sheet
+Use to style the document
+
+Types:
+1.Inline CSS
+->More Important 
+
+2.Internal CSS
+
+3.External CSS
+->Less Important
