@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .header
         {
             height: 80px;
@@ -17,30 +22,46 @@
         }
         .slider{
             height: 400px;
-            background: royalblue;
+            background: url(https://avartanslider.com/wp-content/uploads/2017/03/slider-bg-1.jpg);
+            background-size: 100% 100%;
         }
-        .conteiner{
+        .container{
             height: 250px;
             background: lightcoral;
         }
-        .footer{
-            height: 150px;
-            background: #000;
-        }
+    .container .item{
+        height: inherit;
+        width: 25%;
+        border: 2px solid navy;
+        background: lightgreen;
+        float: left;
+    }
+    /* .item_4{
+        clear: left;
+    } */
+    .footer{
+        height: 150px;
+        background: #000;
+    }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo"></div>
-        <div class="menu"></div>
+        <div class="menu">
+        </div>
     </div>
     <div class="nav"></div>
     <div class="slider"></div>
-    <div class="conteiner">
-        <div class="item item_1"></div>
-        <div class="item item_2"></div>
-        <div class="item item_3"></div>
+    <div class="container">
+        <div class="item item_1">item_1</div>
+        <div class="item item_2">item_2</div>
+        <div class="item item_3">item_3</div>
+        <div class="item item_4">item_4</div>
     </div>
     <div class="footer"></div>
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
 </body>
 </html>
