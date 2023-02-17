@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo-Class</title>
+    <style>
+        .hover
+        {
+            color: navy;
+        }
+        .hover:hover{
+            color:  red;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .focus:focus{
+            color: yellow;
+        }
+        .Visited:visited{
+            color: magenta;
+        }
+        .active:active{
+            color: red;
+        }
+        p:lang(hn)
+        {
+            border: 2px dotted royalblue;
+        }
+        p:first-child{
+            background: rosybrown;
+        }
+        p:last-child{
+            background: burlywood;
+        }
+        p:nth-child(2n+2)
+        {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloribus?</p>
+    <p class="hover">Hover Me!</p>
+    <a href="https://www.google.com" class="">Google</a>
+    <a href="https://www.flipkcart.com" class="focus">focus</a>
+    <a href="https://www.amazon.com" class="Visited">Visited</a>
+    <a href="http://www.myntra.com" class="active">Active</a>
+    <p lang="hn">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, omnis!</p>
+    <p lang="ar">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, omnis!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+</body>
+</html>
