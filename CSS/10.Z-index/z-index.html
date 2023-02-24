@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .main{
+            position: relative;
+            height: 700px;
+        }
+        .item{
+            position: absolute;
+            width: 300px;
+            border: 1px solid black;
+        }
+        .item-1
+        {
+            left: 10px;
+            height: 100px;
+            background: lightblue;
+            z-index: 2;
+        }
+        .item-2{
+            height: 150px;
+            left: 20px;
+            background: lightcoral;
+            z-index: 1;
+        }
+        .item-3{
+            height: 200px;
+            left: 30px;
+            background: salmon;
+        }
+        .item-4{
+            height: 250px;
+            left: 40px;
+            background: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+    </div>
+</body>
+</html>
