@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-Clip</title>
+    <style>
+        div{
+            height: 350px;
+            width: auto;
+            background-color: red;
+            border: 30px solid rgba(120, 255, 255, 0.5);
+            margin: 10px;
+            color: #fff;
+            padding: 50px;
+            background-size: 100% 100%;
+        }
+        .border-box{
+            background-clip: border-box;
+        }
+        .padding-box{
+            background-clip: padding-box;
+        }
+        .content-box{
+            /* height: auto; */
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sint culpa iusto dolore facilis, rem maiores quis commodi, voluptatum repellat voluptas. Cumque omnis fuga fugit nam possimus dolore, repellat id.</div>
+    <div class="padding-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cupiditate quae sed voluptatum nobis itaque tempora eum corrupti error. Accusantium quaerat ipsum voluptatum magnam, eaque reprehenderit eum pariatur itaque quisquam!</div>
+    <div class="content-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cupiditate quae sed voluptatum nobis itaque tempora eum corrupti error. Accusantium quaerat ipsum voluptatum magnam, eaque reprehenderit eum pariatur itaque quisquam!</div>
+</body>
+</html>
