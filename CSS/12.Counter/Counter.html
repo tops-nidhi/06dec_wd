@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        div{
+            counter-reset: x;
+        }
+        h1{
+            counter-reset: y;
+        }
+        h1::before{
+            counter-increment: x;
+            content: counter(x);
+        }
+        p::before{
+            counter-increment: y;
+            content: counter(x) "." counter(y);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cold Drink</h1>
+        <p>Fanta</p>
+        <p>Maza</p>
+        <p>Sprite</p>
+        <h1>Hot Drink</h1>
+        <p>Tea</p>
+        <p>Coffee</p>
+    </div>
+</body>
+</html>

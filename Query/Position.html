@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            height: 300px;
+            width: 700px;
+            position: relative;
+            overflow: hidden;
+            margin: auto;
+            
+        }
+        img{
+            position: absolute;
+            left: -100px;
+            transition: 1s;
+        }
+        div:hover img{
+            left: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/90/media/disneyparks_v0100/1/media/mediaplayer/homepage/mickey-minnie-16x9.jpg" alt="" height="300px" width="800px">
+    </div>
+</body>
+</html>
