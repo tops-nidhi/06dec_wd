@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        header{
+            display: flex;
+        }
+        header .logo{
+            width: 30%;
+            height: 70px;
+            background: lightgray;
+        }
+        header .menu{
+            width: 70%;
+            height: 70px;
+            background: #666;
+        }
+        @media (min-width: 900px)
+        {
+            header{display: flex;}
+            header .logo{width: 10%; background: lightcoral;}
+            header .menu{width: 90%; background: darkorchid;}
+        }
+        @media (min-width: 700px) and (max-width:900px)
+        {
+            header{display: block;}
+            header .logo{width: 100%; background: lightgreen;}
+            header .menu{width: 100%; background: darkgreen;}
+        }
+        @media (min-width: 500px) and (max-width:700px)
+        {
+            header{display: flex;}
+            header .logo{width: 50%; background: lavender;}
+            header .menu{width: 50%; background: crimson;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="menu"></div>
+    </header>
+    <nav></nav>
+</body>
+</html>
