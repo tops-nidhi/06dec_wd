@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            background: crimson;
+            border: solid 4px black;
+            margin: 5px auto;
+        }
+        .translate{
+            position: absolute;
+            z-index: 1;
+            background: rgba(255, 0, 0, 0.5);
+            transform: translate(50px, 50px);
+        }
+        .translate1{
+            /* border: none; */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="original">original</div>
+    <div class="main" style="background: transparent; border: none; position: relative;">
+
+        <div class="translate">translate</div>
+        <div class="translate1">translate1</div>
+    </div>
+</body>
+</html>
