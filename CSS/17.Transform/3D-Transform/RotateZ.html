@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate-Z</title>
+    <style>
+        div{
+            height: 200px;
+            width: 300px;
+            background: url(https://i.pinimg.com/736x/09/24/a7/0924a7ef295741e916c8f42512bbe5bd.jpg);
+            background-size: 100% 100%;
+            margin: 5px auto;
+        }
+        .main
+        {
+            position: relative;
+            margin: 0 auto ;
+            background: transparent;
+            backface-visibility: hidden;
+        }
+        .rotate{
+            position: absolute;
+            /* background: red; */
+            backface-visibility: hidden;
+            transform: rotateZ(180deg);
+            transition: 1s;
+        }
+        .rotateZ{
+            position: absolute;
+            transition: 1s;
+            backface-visibility: hidden;
+            transform: rotateZ(0deg);
+        }
+        .main:hover .rotateZ{
+            transform: rotateZ(360deg);
+            border-radius: 50%;
+        }
+        .main:hover .rotate{
+            transform: rotateZ(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="original">original</div>
+    <div class="main">main
+        <!-- <div class="rotate">rotate</div> -->
+        <div class="rotateZ">rotateZ</div>
+    </div>
+</body>
+</html>
