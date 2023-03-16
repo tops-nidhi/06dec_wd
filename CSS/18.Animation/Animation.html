@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 500px;
+            width: 700px;
+            background: aqua;
+            border: 30px double dodgerblue;
+            margin: auto;
+            background-size: 100% 100%; 
+            position: absolute;
+            animation-name: ani;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 50;
+            animation-timing-function: ease-out;
+            animation-direction: normal;
+        }
+        @keyframes ani{
+            from{background: url(https://w0.peakpx.com/wallpaper/539/245/HD-wallpaper-captain-america-america-avengers-captain-endgame-lightning-marvel-shield-superhero-thor.jpg); background-size: 100% 100%; 
+            top: 10px;
+            left: 0;
+            filter: brightness(70%);
+        }
+        
+            to{
+                background: url(https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/Thor_in_LoveAndThunder_Poster.jpg/revision/latest?cb=20220615195810);
+                background-size: 100% 100%; 
+                top: 100px;
+                border-radius: 50%;
+                left: 250px;
+            filter: brightness(70%);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
