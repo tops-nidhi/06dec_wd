@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        header{
+            height: 70px;
+            border: 1px solid black;
+        }
+        ul{
+            background: lightblue;
+            color: navy;
+            text-align: center;
+            line-height: 70px;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            margin: 10px;
+            padding: 30px;
+            transition: 1s;
+        }
+        ul li a{
+            text-decoration: none;
+            color: navy;
+        }
+        .perent{
+            position: relative;
+        }
+        .child{
+            position: absolute;
+            left: 0px;
+            width: 150px;
+        }
+        .child li{
+            /* display: block; */
+            margin: 10px;
+            padding: 0px;
+            display: none;
+        }
+        .perent:hover .child li{
+            display: block;
+        }
+        ul li:hover{
+            background: aqua;
+            text-decoration: underline;
+            text-decoration-thickness: 5px;
+        }
+        ul li:hover a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="perent"><a href="#">Contact-US</a>
+                <ul class="child">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=9067493650&text=Hello%20">Whatsapp</a></li>
+                    <li><a href="#">FaceBook</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Log-in</a></li>
+        </ul>
+    </header>
+</body>
+</html>
