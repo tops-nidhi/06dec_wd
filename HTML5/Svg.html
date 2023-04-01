@@ -9,30 +9,70 @@
         svg{
             background: lightblue;
         }
+        ellipse{
+            fill: url(#grad1);
+        }
+        rect{
+            fill: url(#rg1);
+        }
     </style>
 </head>
 <body>
     <p><b>SVG</b>- Sclable Vectore Graphics</p>
 
     <!-- circle -->
-    <svg height="300" width="500">
+    <!-- <svg height="300" width="500">
         <circle cx="150" cy="150" r="100" stroke="green" stroke-width="10" fill="yellow"></circle>
-    </svg>
+    </svg> -->
 
     <!-- ellipse -->
-    <svg height="500" width="700">
+    <!-- <svg height="500" width="700">
         <ellipse cx="250" cy="250" rx="100" ry="170" stroke="#2f002f" stroke-with="30" fill="#fff"></ellipse>
         sorry, svg isn't working properly. goto another browser!
-    </svg>
+    </svg> -->
 
     <!-- Rectangle -->
-    <svg height="250" width="250">
+    <!-- <svg height="250" width="250">
         <rect height="200" width="200" fill="#00ffff"></rect>
-    </svg>
+    </svg> -->
     
     <!-- Line -->
-    <svg height="200" width="200">
+    <!-- <svg height="200" width="200">
         <line x1="100" y1="100" x2="200" y2="200" stroke="green" stroke-width="10"></line>
+    </svg> -->
+
+    <!-- Polygon -->
+    <!-- <svg height="250" width="250">
+        <polyline points="0,0 20,180 50,180 0,80 120,60 80,80" stroke="red" stroke-width="1" fill="none"/>
+    </svg> -->
+
+    <!-- ready svg -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M4,5c-0.55226,0.00006 -0.99994,0.44774 -1,1v38c0.00116,0.47654 0.33841,0.88607 0.80588,0.97862c0.46747,0.09255 0.93531,-0.1576 1.11795,-0.59776l15.63672,-38c0.12696,-0.30836 0.09187,-0.65971 -0.09355,-0.93687c-0.18543,-0.27716 -0.4968,-0.44367 -0.83027,-0.44399zM30.36328,5c-0.33347,0.00032 -0.64485,0.16683 -0.83027,0.44399c-0.18543,0.27716 -0.22051,0.62851 -0.09355,0.93687l15.63672,38c0.18264,0.44015 0.65048,0.6903 1.11795,0.59776c0.46747,-0.09255 0.80471,-0.50207 0.80588,-0.97862v-38c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM5,7h13.14258l-13.14258,31.94336zM31.85742,7h13.14258v31.94336zM24.98242,18.11133c-0.39965,0.00694 -0.75679,0.25117 -0.9082,0.62109l-6.9082,16.88867c-0.12624,0.30847 -0.09052,0.65955 0.09526,0.93627c0.18579,0.27672 0.49722,0.4427 0.83052,0.44263h6.23633l3.01953,7.37891c0.15389,0.37578 0.51971,0.62121 0.92578,0.62109h6.9082c0.3333,0.00007 0.64473,-0.16591 0.83052,-0.44263c0.18579,-0.27672 0.22151,-0.62781 0.09526,-0.93627l-10.18164,-24.88867c-0.15627,-0.38177 -0.53091,-0.62843 -0.94336,-0.62109zM25,21.75391l8.69141,21.24609h-4.74609l-3.01953,-7.37891c-0.15389,-0.37578 -0.51971,-0.62121 -0.92578,-0.62109h-5.41992z"></path></g></g></svg> -->
+
+    <!-- linear -->
+    <!-- <svg height="150" width="400">
+        <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:0.7" />
+        <stop offset="50%" stop-color="coral" stop-opacity="0.5"/>
+        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:0.3" />
+        </linearGradient>
+        </defs>
+        <ellipse cx="200" cy="70" rx="85" ry="55" stroke-width="5" stroke="navy"/>
+        </svg> -->
+
+    <!-- Radial -->
+    <svg height="250" width="250">
+        <defs>
+            <radialGradient id="rg1" cx="50%" cy="50%" r="30%" fx="50%" fy="50%" spreadmethod="repeat">
+                <stop offset="0%" stop-color="red" stop-opacity="0.5"/>
+                <stop offset="25%" stop-color="magenta" stop-opacity="0.5"/>
+                <stop offset="50%" stop-color="coral" stop-opacity="0.5"/>
+                <stop offset="75%" stop-color="salmon" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="lightcoral" stop-opacity="0.5"/>
+            </radialGradient>
+        </defs>
+        <rect x="0" y="0" height="200" width="200" />
     </svg>
 </body>
 </html>
