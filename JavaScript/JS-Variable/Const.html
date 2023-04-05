@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="par"></p>
+    <script>
+        var p = document.getElementById('par');
+        // To check id is properly get or not
+        console.log(p);
+
+        const a = 10;
+        p.innerHTML = a;
+
+        //can't assignment (give) a new value
+        /*a = 23;
+        p.innerHTML = a;*/
+
+        // Can't redefine a same name of variable
+        /*var a = 70;
+        p.innerHTML = a;*/
+    </script>
+</body>
+</html>
