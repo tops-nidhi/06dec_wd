@@ -8,43 +8,43 @@
 </head>
 <body>
         <form action="">
-            Enter the value of a:<input type="text" name="" id="a"><br><br>
+            <!-- Enter the value of a:<input type="text" name="" id="a"><br><br>
             Enter the value of b:<input type="text" name="" id="b"><br><br>
-            Answer is:<input type="text" name="" id="ans"><br>
+            Answer is:<input type="text" name="" id="ans"><br> -->
         </form>
     <script>
         /*
-            -> +, -, *, /, %, ++, --
+            -> +, -, *, /, %, ++, --, **
         */
-        var a_1 = parseInt(document.getElementById('a').value);
+        /*var a_1 = parseInt(document.getElementById('a').value);
         var b_1 = parseInt(document.getElementById('b').value);
-        let ans_1 = document.getElementById('ans');
-
-        a_1
+        let ans_1 = document.getElementById('ans');*/
+        var a_1 = 10;
+        var b_2 = 5;
         // To check id is properly get or not
-        console.log(ans_1);
+        // console.log(ans_1);
 
+        document.write(a_1 ** b_2);
         // Addition
-        ans_1.value = a_1 + b_1;
+        // ans_1.value = a_1 + b_1;
 
         // Subtraction
-        ans_1.value = a_1 - b_1
+        // ans_1.value = a_1 - b_1
         
         // Multiplication
-        ans_1.value = a_1*b_1;
+        // ans_1.value = a_1*b_1;
 
-        // Division
-        
-        ans_1.value = a_1/b_1;
+        // Division    
+        // ans_1.value = a_1/b_1;
 
         // Modulo
-        ans_1.value = a_1%b_1;
+        // ans_1.value = a_1%b_1;
 
         // Increment
-        ans_1.value = ++a_1;
+        // ans_1.value = ++a_1;
 
         // decrement
-        ans_1.value = --b_1;
+        // ans_1.value = --b_1;
     </script>
 </body>
 </html>
