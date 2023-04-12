@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical</title>
+</head>
+<body>
+    <script>
+        // &&, ||, !
+        /*
+        1.Logical AND:
+            A       B       Ans
+        ->  t       t       t    
+        ->  T       F       F
+        ->  F       T       F
+        ->  F       F       F
+        ------------------------------------------
+        2. Logical OR:
+            A       B       Ans
+        ->  t       t       t    
+        ->  T       F       T
+        ->  F       T       T
+        ->  F       F       F
+        ------------------------------------------
+        3.Logical NOT:
+            Condition   Ans
+            True        False
+            False       True
+        */
+    var a = 45, b = 82;
+        if (!(a<0 || b>0)) {
+            document.write(true);
+        }   
+        else{
+             document.write(false);
+        }
+    </script>
+</body>
+</html>
