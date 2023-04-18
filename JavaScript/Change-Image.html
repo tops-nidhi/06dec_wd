@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+</head>
+<body>
+    <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/cases-covers/back-cover/j/i/6/mycas-black-vv-y35-qcase-original-imagj87uwxzarrzk.jpeg?q=70" alt="track" id="img">
+    <button id="but" onclick="change1()">Change Image</button>
+    <script>
+        var im = document.getElementById('img');
+        function change1()
+        {
+            if(im.src == 'https://rukminim1.flixcart.com/image/200/200/xif0q/cases-covers/back-cover/j/i/6/mycas-black-vv-y35-qcase-original-imagj87uwxzarrzk.jpeg?q=70')
+            {
+                im.src = '../Image/Nature.jpg';
+                im.style ='height:';
+            }
+            else{
+                im.src = 'https://rukminim1.flixcart.com/image/200/200/xif0q/cases-covers/back-cover/j/i/6/mycas-black-vv-y35-qcase-original-imagj87uwxzarrzk.jpeg?q=70';
+            }
+        }
+    </script>
+</body>
+</html>
