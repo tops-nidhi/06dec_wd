@@ -7,16 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="" id="in" >
+    <p id="para">This is paragraph tag</p>
     <button id="c1">Click</button>
     <script>
-        var inp = document.getElementById('in');
+        var par = document.getElementById('para');
         let c_1 = document.getElementById('c1');
+        c_1.addEventListener('dblclick',key); 
         function key()
         {
-            alert('hello World!');
+           par.innerHTML = 'Hello world';
         }
-        c_1.addEventListener('dblclick',key); 
     </script>
 </body>
 </html>
