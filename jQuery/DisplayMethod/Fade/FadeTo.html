@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadeTo</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').mouseover(function(){
+                $('div').fadeTo(1000, 0.4);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="height: 150px; width: 150px; background: seagreen;"></div>
+    <button>FadeTo</button>
+</body>
+</html>

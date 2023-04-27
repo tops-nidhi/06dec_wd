@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadeToggle</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                // $('div').fadeToggle();
+                // $('div').fadeToggle('slow');
+                // $('div').fadeToggle('fast');
+                $('div').fadeToggle(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="height: 200px; width: 200px; background: crimson; display: block;"></div>
+    <button>fadeToggle</button>
+</body>
+</html>
