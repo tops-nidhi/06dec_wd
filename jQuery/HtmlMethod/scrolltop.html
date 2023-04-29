@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unwrap</title>
+    <title>ScrollTop</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function(){
             $('button').click(function(){
-                $('h1').unwrap();
+                alert($('div').scrollLeft() + 'px' + $('div').scrollTop() + 'px');
             });
         });
     </script>
 </head>
 <body>
-    <div style=" background: lightcoral; color: blue;">
-        <h1>Heading 1</h1>
-    </div>
-    <button>Unwrap</button>
+    <div style="height: 70px; width: 150px; overflow: auto;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia alias soluta aliquid quos, excepturi expedita tenetur sint possimus. Numquam aut modi maxime neque? Modi cumque totam, qui quisquam deleniti esse!</div>
+    <button>ScrollTop</button>
 </body>
 </html>
