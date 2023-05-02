@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // create a this variable and assign 'p' element
+                var $this = $('p');
+                var $clone = $this.clone();
+                $clone.appendTo("#clone");
+
+            })
+    });
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div id="clone"></div>
+    <button>Clone</button>
+</body>
+</html>
