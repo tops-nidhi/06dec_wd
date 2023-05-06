@@ -1,0 +1,6 @@
+step 1: Search the jQuery
+step 2: Then go to the first link
+step 3: Click the link (https://jquery.com/)
+step 4: Click the link (https://jquery.com/download/)
+step 5: Right Click on the link Download the compressed, production jQuery 3.6.4 and then click on the save link as (https://code.jquery.com/jquery-3.6.4.min.js)
+step 6: Select the path where you want to save
