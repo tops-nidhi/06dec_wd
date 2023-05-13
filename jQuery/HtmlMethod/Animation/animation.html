@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        div{
+            background: lightblue;
+            border-style: solid
+            ;
+            border-color: blue;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                
+                $("div").animate({
+                    height: 'toggle', 
+                    width: 'toggle',
+                    backgroundColor: 'black',
+                    color: 'maroon',
+                    margin: '100px',
+                    padding: '50px', 
+                    opacity: 0.5,
+                    border: '5px solid red'
+                }, 5000);
+                $("div").css({backgroundColor: 'red'});
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div style="height: 200px; width: 200px; ">
+    
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis ea soluta? Beatae optio, sunt quae numquam, aliquam distinctio tempora voluptatum dolor est impedit qui. Iusto cum autem expedita dignissimos.
+
+    </div>
+    <button>Animation</button>
+</body>
+</html>
