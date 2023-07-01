@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid .hero-area{
+    filter: brightness(70%);
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+}
+.navbar a{
+    font-weight: 700;
+    color: #fff;
+}
+.navbar .navbar-nav .active{
+    color: #F28123;
+}
+.navscroll{
+    background: black !important;
+}

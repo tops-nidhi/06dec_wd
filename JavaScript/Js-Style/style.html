@@ -7,15 +7,22 @@
     <title>Style</title>
     
 </head>
-<body>
-    <div id="div"></div>
+<body onscroll="add()">
+    <div id="div" style="height: 1100px; border: 1px solid salmon;"></div>
     <script>
-        var d1 = document.getElementById('div');
-        console.log(d1);
-        d1.style.height = '200px';
-        d1.style.width = '200px';
-        d1.style.backgroundColor = 'red';
-        d1.style.margin = 'auto';
-    </script>
+        function add()
+        {
+                var d1 = document.getElementById('div');
+            if(window.scrollY >= 150)
+            {
+
+                console.log(d1);
+                d1.style.height = '200px';
+                d1.style.width = '200px';
+                d1.style.backgroundColor = 'red';
+                d1.style.margin = 'auto';
+            }
+        }
+    </script> 
 </body>
 </html>
